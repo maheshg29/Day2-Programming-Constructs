@@ -39,5 +39,20 @@ namespace Day2_Programming_Constructs
                 Console.WriteLine("Tails wins!");
             }
         }
+
+        //Take a user input word and reverse it using loop.
+        public void ReverseString(string userData)
+        {
+            char[] charArray = userData.ToCharArray();
+            string reversedString = String.Empty;
+            int loopLenth = charArray.Length -1 ;
+
+            while (loopLenth >= 0)
+            {
+                reversedString += charArray[loopLenth];
+                loopLenth --;
+            }
+            Console.WriteLine(reversedString);
+        }
     }
 }

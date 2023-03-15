@@ -75,6 +75,10 @@ namespace Day2_Programming_Constructs
             WhileLoop whileLoop= new WhileLoop();
             whileLoop.FlipCoin();
 
+            Console.WriteLine("Enter String for Reverse");
+            string userData = Console.ReadLine();
+            whileLoop.ReverseString(userData);
+
            
             Console.ReadLine();
         }
