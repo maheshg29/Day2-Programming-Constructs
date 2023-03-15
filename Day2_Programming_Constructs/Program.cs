@@ -19,6 +19,8 @@ namespace Day2_Programming_Constructs
             int valueTwo = Convert.ToInt32(Console.ReadLine());
             ifElse.EqualorNot(valueOne, valueTwo);
 
+            ifElse.EvenOrOdd(valueOne);
+
         }
     }
 }
