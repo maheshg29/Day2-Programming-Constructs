@@ -79,6 +79,8 @@ namespace Day2_Programming_Constructs
             string userData = Console.ReadLine();
             whileLoop.ReverseString(userData);
 
+            whileLoop.SumOfFirst5();
+
            
             Console.ReadLine();
         }

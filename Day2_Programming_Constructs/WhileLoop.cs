@@ -54,5 +54,19 @@ namespace Day2_Programming_Constructs
             }
             Console.WriteLine(reversedString);
         }
+
+        //while loop to compute sum of first 5 natural numbers
+        public void SumOfFirst5()
+        {
+            int start = 1;
+            int sum = 0;
+
+            while (start <= 5)
+            {
+                sum += start;
+                start++; 
+            }
+            Console.WriteLine("Sum of the first 5 natural numbers: " + sum);
+        }
     }
 }
