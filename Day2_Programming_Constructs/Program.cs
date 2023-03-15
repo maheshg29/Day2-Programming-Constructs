@@ -55,6 +55,8 @@ namespace Day2_Programming_Constructs
             int numberTwo = Convert.ToInt32(Console.ReadLine());
             switchStatement.ArithmaticOperation(operationNumber, numberOne, numberTwo);
 
+
+            ////For Loop////
             Console.Write("Enter a number for power of 2");
             int number = Convert.ToInt32(Console.ReadLine());
             ForLoop forLoop = new ForLoop();
@@ -63,6 +65,10 @@ namespace Day2_Programming_Constructs
             Console.WriteLine("Enter Number for Sum of Square ");
             int numforsqure = Convert.ToInt32(Console.ReadLine());
             forLoop.SumOfSquare(numforsqure);
+
+            Console.WriteLine("Enter Number for Factorial");
+            int factorialNumber = Convert.ToInt32(Console.ReadLine());
+            forLoop.FactorialOfNumber(factorialNumber);
 
            
             Console.ReadLine();

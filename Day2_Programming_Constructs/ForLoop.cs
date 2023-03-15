@@ -34,5 +34,17 @@ namespace Day2_Programming_Constructs
 
             Console.WriteLine("The sum of squares of {0} numbers starting from 1 is {1}.",number,sum);
         }
+
+        //Write a program that computes a factorial of a number taken as input
+        public void FactorialOfNumber(int factorialNumber)
+        {
+            int factorial = 1;
+            for (int i = 1; i <= factorialNumber; i++)
+            {
+                factorial *= i;
+            }
+
+            Console.WriteLine("{0}! = {1}", factorialNumber, factorial);
+        }
     }
 }
