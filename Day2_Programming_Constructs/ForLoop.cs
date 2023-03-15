@@ -20,5 +20,19 @@ namespace Day2_Programming_Constructs
                 Console.WriteLine(result);
             }
         }
+
+
+        //Write a program that reads a number N and prints the sum of squares of N numbers starting from 1.
+
+        public void SumOfSquare(int number)
+        {
+            int sum = 0;
+            for (int i = 1; i <= number; i++)
+            {
+                sum += i * i;
+            }
+
+            Console.WriteLine("The sum of squares of {0} numbers starting from 1 is {1}.",number,sum);
+        }
     }
 }

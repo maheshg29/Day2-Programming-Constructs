@@ -42,7 +42,7 @@ namespace Day2_Programming_Constructs
             ifElse.AdmissionCriteria(mathMark, phyMark, chemMark);
 
             ////Switch Statment//
-            SwitchStatement switchStatement=new SwitchStatement();
+            SwitchStatement switchStatement = new SwitchStatement();
             Console.WriteLine("Enter Day Number in Between 1 to 7");
             int dayNumber = Convert.ToInt32(Console.ReadLine());
             switchStatement.WeekdayName(dayNumber);
@@ -59,6 +59,10 @@ namespace Day2_Programming_Constructs
             int number = Convert.ToInt32(Console.ReadLine());
             ForLoop forLoop = new ForLoop();
             forLoop.PowerOf2(number);
+
+            Console.WriteLine("Enter Number for Sum of Square ");
+            int numforsqure = Convert.ToInt32(Console.ReadLine());
+            forLoop.SumOfSquare(numforsqure);
 
            
             Console.ReadLine();
