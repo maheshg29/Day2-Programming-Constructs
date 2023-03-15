@@ -50,5 +50,22 @@ namespace Day2_Programming_Constructs
             }
         }
 
+        //Write a C# Sharp program to find the largest of three numbers.
+        public void LargeNumber(int numOne, int numTwo, int numThree)
+        {
+            if (numOne > numTwo && numOne > numThree)
+            {
+                Console.WriteLine("Number one is Larg");
+            }
+            else if (numTwo > numThree && numTwo > numOne)
+            {
+                Console.WriteLine("Number two is Larg");
+            }
+            else
+            {
+                Console.WriteLine("Number Three is Larg");
+            }
+        }
+
     }
 }
