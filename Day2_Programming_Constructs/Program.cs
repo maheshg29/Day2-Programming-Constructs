@@ -10,7 +10,14 @@ namespace Day2_Programming_Constructs
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Day Practice Problem");
+            Console.WriteLine("Welcome to Day 2 Practice Problem");
+            
+            IfElse ifElse = new IfElse();
+            Console.WriteLine("Enter First value");
+            int valueOne = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter Second value");
+            int valueTwo = Convert.ToInt32(Console.ReadLine());
+            ifElse.EqualorNot(valueOne, valueTwo);
 
         }
     }
