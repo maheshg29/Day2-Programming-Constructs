@@ -70,6 +70,11 @@ namespace Day2_Programming_Constructs
             int factorialNumber = Convert.ToInt32(Console.ReadLine());
             forLoop.FactorialOfNumber(factorialNumber);
 
+
+            ////While Loop////
+            WhileLoop whileLoop= new WhileLoop();
+            whileLoop.FlipCoin();
+
            
             Console.ReadLine();
         }
