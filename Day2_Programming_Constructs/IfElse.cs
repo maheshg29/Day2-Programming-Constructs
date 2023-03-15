@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.ConstrainedExecution;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Day2_Programming_Constructs
 {
@@ -67,5 +68,45 @@ namespace Day2_Programming_Constructs
             }
         }
 
+        // Write a C# Sharp program to find the eligibility of admission for a professional course based on the following criteria:
+        //Marks in Maths >=65
+        //Marks in Physics >=55
+        //Marks in Chemistry >=50
+        //Total in all three subject >=180
+        //or
+        //Total in Math and(Physics or Chemistry) >=140
+        //Test Data :
+        //Input the marks obtained in Physics :65
+        //Input the marks obtained in Chemistry :51
+        //Input the marks obtained in Mathematics :72
+        //Expected Output :
+        //The candidate is eligible for admission.
+
+        public void AdmissionCriteria(int mathMark, int phycMark, int chemMark)
+        {
+            if (mathMark + phycMark + chemMark >= 170)
+            {
+                if (mathMark >= 65 && phycMark >= 55 && chemMark >= 50)
+                {
+                    Console.WriteLine("The candidate is eligible for admission.");
+                }
+                else
+                {
+                    Console.WriteLine("The candidate is Not eligible for admission.");
+                }
+            }
+            else if (mathMark + phycMark >= 140 || mathMark + chemMark >= 140)
+            {
+                if (mathMark >= 65 && phycMark >= 55 && chemMark >= 50)
+                {
+                    Console.WriteLine("The candidate is eligible for admission.");
+                }
+                else
+                {
+                    Console.WriteLine("The candidate is Not eligible for admission.");
+                }
+            }
+            
+        }
     }
 }
